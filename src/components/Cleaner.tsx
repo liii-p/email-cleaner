@@ -11,7 +11,7 @@ import { TrashProgress, type TrashStatus } from "./TrashProgress";
 type Preview = { query: string; totalCount: number; sample: PreviewMessage[] };
 
 const button =
-  "rounded-md px-4 py-2 text-sm font-medium disabled:cursor-not-allowed disabled:opacity-50";
+  "rounded-md px-4 py-2 text-sm font-medium hover:cursor-pointer disabled:cursor-not-allowed disabled:opacity-50";
 
 function liveQuery(form: FormState): { query?: string; error?: string } {
   const parsed = filtersSchema.safeParse(toFilters(form));

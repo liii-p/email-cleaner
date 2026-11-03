@@ -36,7 +36,7 @@ async function AuthGate() {
         {session?.error && (
           <p className="mb-3 text-sm text-red-600">Your Google session expired. Please sign in again.</p>
         )}
-        <button className="rounded-md bg-zinc-900 px-4 py-2 text-sm font-medium text-white dark:bg-zinc-100 dark:text-zinc-900">
+        <button className="hover:cursor-pointer rounded-md bg-zinc-900 px-4 py-2 text-sm font-medium text-white dark:bg-zinc-100 dark:text-zinc-900">
           Sign in with Google
         </button>
       </form>
@@ -55,7 +55,7 @@ async function AuthGate() {
         <span>
           Signed in as <strong>{session.user.email}</strong>
         </span>
-        <button className="text-zinc-500 underline">Sign out</button>
+        <button className="text-zinc-500 underline hover:cursor-pointer">Sign out</button>
       </form>
       <Cleaner />
     </>
